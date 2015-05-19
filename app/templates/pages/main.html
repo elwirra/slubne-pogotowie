@@ -1,0 +1,93 @@
+<section class="main-top row">
+	<div class="main-top-content container">
+		<h2>Przeczytaj recenzje tysięcy par, wybierz najlepsze usługi
+		<small>by uczynić <strong>ten dzień</strong> wyjątkowym</small></h2>
+		<div class="search-box">
+			<form action="#">
+				<p>
+					<input type="text" placeholder="Czego szukasz? (Np. sukni)" />
+				</p>
+				<p>
+					<select name="city" id="city">
+						<option value="Warszawa">Warszawa</option>
+						<option value="Wrocław">Wrocław</option>
+					</select>
+				</p>
+				<p>
+					<button type="submit">Szukaj</button>
+				</p>
+			</form>
+		</div>
+	</div>
+</section>
+<section class="reviews" ng-controller="ReviewsList as reviews">
+	<h3>Najnowsze recenzje</h3>
+	<div class="reviews-content row clearfix">
+		<div class="review col-lg-4 col-md-4 col-sm-12" ng-repeat="review in reviews.data">
+			<img src="img/placeholder-avatar.jpg" alt="" />
+			<div class="right-content">
+				<h4>{{ review.name }}</h4>
+				<div class="stars"></div>
+				<span class="category"> {{ review.category }} </span>
+				<p> {{ review.description }} </p>
+			</div>
+		</div>
+	</div>
+</section><!-- /reviews -->
+
+<section class="categories row">
+	<h3>Kategorie usług</h3>
+	<div class="clearfix">
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/catering.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/florist.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/fryzjer.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/kapele.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/makeup.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/photo.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/samochod.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/suknie.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/zakwaterowanie.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/catering.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/kapele.jpg" alt="">
+		</div>
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
+			<img src="img/makeup.jpg" alt="">
+		</div>
+	</div>	
+</section><!-- /categories -->
+
+<section class="add-section">
+	<div class="row clearfix">
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<a href="#" class="btn btn-gray pull-right">
+				+ dodaj kategorię
+			</a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<a href="#" class="btn btn-blue pull-left">
+				+ dodaj swoją firmę
+			</a>
+		</div>
+	</div>
+</section><!-- /add-section -->

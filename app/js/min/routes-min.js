@@ -1,0 +1,1 @@
+angular.module("WeddingEmergency").config(["$routeProvider",function(e){e.when("/notes",{templateUrl:"templates/pages/main.html"}).otherwise({redirectTo:"/"})}]);

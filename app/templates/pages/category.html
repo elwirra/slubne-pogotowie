@@ -1,0 +1,67 @@
+<div class="short-top row" ng-controller="ShowCategory as showcat">
+		<h3>Szukasz: <strong> wyszukanie </strong> w </h3>
+		<form action="#" ng-controller="ChooseCity as choose">
+			<p>
+				<select name="city" id="city">
+					<option ng-repeat="city in choose.data" value="{{ city }}">{{ city }}</option>
+				</select>
+			</p>
+		</form>
+	</div>
+		<nav class="breadcrumbs">
+			Tu jesteś: <a href="index.html">Strona główna</a> > <span>Miejsce</span>
+		</nav>
+		<div class="row page-container">
+			<aside class="col-lg-3 col-md-3 col-sm-3">
+				<h3>Filtry:</h3><a ng-click="predicate=''" class="sm-btn btn-solid-gray">Wyczyść</a>
+				<div class="sort-by">
+					<h4>Sortuj według:</h4>
+					<ul ng-model="orderProp">
+						<li>
+							<a ng-click="predicate='name'; reverse=false">Nazwy</a>
+						</li>
+						<li>
+							<a href="">oceny</a>							
+						</li>
+						<li>
+							<a ng-click="predicate='reviewsNum'; reverse=false">Ilości ocen</a>
+						</li>
+						<li>
+							<a ng-click="predicate='age'; reverse=!reverse">Daty dodania</a>
+						</li>
+						<li>
+							<a ng-click="predicate='price'; reverse=!reverse">Ceny</a>
+						</li>
+					</ul>
+					<h4>Zakres cenowy:</h4>
+
+				</div>
+				<div class="recently-seen">
+					<h3>Ostatnio oglądane:</h3>
+					<div class="review sm-review">
+						<img src="img/placeholder-avatar.jpg" alt="" />
+						<div class="right-content">
+							<h4>Cukiernia Miłkowski</h4>
+							<div class="stars"></div>
+							<span class="category">Torty weselne</span>
+							<p>Piękne torty na zamówienie...</p>
+						</div>
+					</div>
+				</div>
+			</aside>
+			
+			<section class="search-results col-lg-9 col-md-9 col-sm-9">
+				<h4>Wyniki wyszukiwania <span>(900)</span>:</h4>
+				<div class="row" id="tiles-wrapper" ng-controller="CategoryVendors as vendors">
+					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in vendors.data | orderBy:predicate:reverse">
+						<div class="inner-tile">
+							<img ng-src="{{vendor.img}}" alt="">
+							<h4>{{vendor.name}}</h4>
+							<div class="stars"></div>
+							<p><span class="ico-location"></span>{{vendor.location}}</p>
+							<p><span class="ico-cost"></span>{{vendor.price}}</p>
+						</div>
+					</div>			
+				</div>	
+			</section>
+		</div>

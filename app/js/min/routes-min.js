@@ -1,1 +1,1 @@
-angular.module("WeddingEmergency").config(["$routeProvider",function(e){e.when("/notes",{templateUrl:"templates/pages/main.html"}).otherwise({redirectTo:"/"})}]);
+angular.module("WeddingEmergency").config(["$routeProvider",function(e){e.when("/",{templateUrl:"templates/pages/main.html"}).when("/:id",{templateUrl:"templates/pages/category.html",controller:"ShowCategory",controllerAs:"showcat"}).otherwise({redirectTo:"/"})}]);

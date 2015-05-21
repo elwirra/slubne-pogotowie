@@ -35,44 +35,14 @@
 	</div>
 </section><!-- /reviews -->
 
-<section class="categories row">
+<section class="categories row" ng-controller="ShowCategory as categories">
 	<h3>Kategorie usług</h3>
 	<div class="clearfix">
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/catering.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/florist.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/fryzjer.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/kapele.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/makeup.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/photo.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/samochod.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/suknie.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/zakwaterowanie.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/catering.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/kapele.jpg" alt="">
-		</div>
-		<div class="category-tile col-lg-3 col-md-3 col-sm-12">
-			<img src="img/makeup.jpg" alt="">
+		<div class="category-tile col-lg-3 col-md-3 col-sm-12" ng-repeat="category in categories.data">
+			<a ng-href="#/{{category.name}}">
+				<h3>{{ category.name }}</h3>
+				<img ng-src="{{category.img}}" alt="">
+			</a>
 		</div>
 	</div>	
 </section><!-- /categories -->

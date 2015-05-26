@@ -16,7 +16,7 @@
     "jquery-rateyo": "~1.2.2",
     "packery": "~1.4.1",
     "selectize": "~0.12.1",
-    "slick": "*",
-    "easy-tabs": "~1.2.6"
+    "ng-breadcrumbs": "~0.4.1",
+    "slick.js": "~1.5.5"
   }
 }

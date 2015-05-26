@@ -1,6 +1,6 @@
-<div class="short-top row" ng-controller="ShowCategory as showcat">
-		<h3>Szukasz: <strong> wyszukanie </strong> w </h3>
-		<form action="#" ng-controller="ChooseCity as choose">
+<div class="short-top row">
+		<h3>Szukasz: <strong> {{ curCategory }} </strong> w </h3>
+		<form action="#" ng-controller="chooseCityCtrl as choose">
 			<p>
 				<select name="city" id="city">
 					<option ng-repeat="city in choose.data" value="{{ city }}">{{ city }}</option>
@@ -8,29 +8,32 @@
 			</p>
 		</form>
 	</div>
-		<nav class="breadcrumbs">
-			Tu jesteś: <a href="index.html">Strona główna</a> > <span>Miejsce</span>
-		</nav>
+		<ol class="breadcrumb">
+			<li ng-repeat="breadcrumb in breadcrumbs.get() track by breadcrumb.path" ng-class="{ active: $last }">
+			  <a ng-if="!$last" ng-href="#{{ breadcrumb.path }}" ng-bind="breadcrumb.label" class="margin-right-xs"></a>
+			  <span ng-if="$last" ng-bind="breadcrumb.label"></span>
+			</li>
+		</ol>
 		<div class="row page-container">
 			<aside class="col-lg-3 col-md-3 col-sm-3">
 				<h3>Filtry:</h3><a ng-click="predicate=''" class="sm-btn btn-solid-gray">Wyczyść</a>
-				<div class="sort-by">
+				<div class="sort-by" id="sort-by">
 					<h4>Sortuj według:</h4>
 					<ul ng-model="orderProp">
 						<li>
-							<a ng-click="predicate='name'; reverse=false">Nazwy</a>
+							<a toggle-class="active" ng-click="predicate='name';reverse=!reverse">Nazwy</a>
 						</li>
 						<li>
-							<a href="">oceny</a>							
+							<a toggle-class="active" ng-click="predicate='averageReview'; reverse=!reverse">Oceny</a>							
 						</li>
 						<li>
-							<a ng-click="predicate='reviewsNum'; reverse=false">Ilości ocen</a>
+							<a toggle-class="active" ng-click="predicate='-reviewsNum'; reverse=!reverse">Ilości ocen</a>
 						</li>
 						<li>
-							<a ng-click="predicate='age'; reverse=!reverse">Daty dodania</a>
+							<a toggle-class="active" ng-click="predicate='age'; reverse=!reverse">Daty dodania</a>
 						</li>
 						<li>
-							<a ng-click="predicate='price'; reverse=!reverse">Ceny</a>
+							<a toggle-class="active" ng-click="predicate='-minPrice'; reverse=!reverse">Ceny</a>
 						</li>
 					</ul>
 					<h4>Zakres cenowy:</h4>
@@ -52,15 +55,17 @@
 			
 			<section class="search-results col-lg-9 col-md-9 col-sm-9">
 				<h4>Wyniki wyszukiwania <span>(900)</span>:</h4>
-				<div class="row" id="tiles-wrapper" ng-controller="CategoryVendors as vendors">
-					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in vendors.data | orderBy:predicate:reverse">
-						<div class="inner-tile">
-							<img ng-src="{{vendor.img}}" alt="">
-							<h4>{{vendor.name}}</h4>
-							<div class="stars"></div>
-							<p><span class="ico-location"></span>{{vendor.location}}</p>
-							<p><span class="ico-cost"></span>{{vendor.price}}</p>
-						</div>
+				<div class="row" id="tiles-wrapper">
+					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in main.vendors | orderBy:predicate:reverse">
+						<a ng-href="#/{{ curCategory }}/{{ vendor.name }}">
+							<div class="inner-tile">
+								<img ng-src="{{vendor.img}}" alt="">
+								<h4>{{vendor.name}}</h4>
+								<div class="stars"></div>
+								<p><span class="ico-location"></span>{{vendor.location}}</p>
+								<p><span class="ico-cost"></span>{{vendor.minPrice}}-{{vendor.maxPrice}}zł</p>
+							</div>
+						</a>
 					</div>			
 				</div>	
 			</section>

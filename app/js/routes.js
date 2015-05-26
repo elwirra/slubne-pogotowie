@@ -1,13 +1,29 @@
-angular.module("WeddingEmergency").config(['$routeProvider',
+app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'templates/pages/main.html'
+        templateUrl: 'templates/pages/main.html',
+        label: 'Strona główna'
       }).
-      when('/:id', {
+      when('/regulamin', {
+        templateUrl: 'templates/pages/terms.html',
+        label: 'Regulamin'
+      }).
+      when('/polityka-prywatnosci', {
+        templateUrl: 'templates/pages/privacypolicy.html',
+        label: 'Polityka prywatności'
+      }).
+      when('/kontakt', {
+        templateUrl: 'templates/pages/contact.html',
+        label: 'Kontakt'
+      }).
+      when('/:cat', {
       	templateUrl: 'templates/pages/category.html',
-      	controller: 'ShowCategory',
-      	controllerAs: 'showcat'
+        label: 'Category'
+      }).
+      when('/:cat/:ven', {
+       	templateUrl: 'templates/pages/vendor.html',
+        label: 'Vendor'
       }).
       otherwise({
         redirectTo: '/'

@@ -1,8 +1,5 @@
 $(function() {
 
-	// TABS
-	//$('#tab-container').easytabs();
-
 	// SQUARE TILES 
 	var tileHeight = $('.category-tile').width();
 	$('.category-tile').css({'height':tileHeight+'px'});
@@ -20,6 +17,20 @@ $(function() {
 	    gutter: 0
 	});
 
+	// STARS 
+
+	$(".stars").rateYo({
+		fullStar: true,
+		readOnly: true,
+		starWidth: "15px"
+	});
+
+	$('#big-stars').rateYo({
+		starWidth: "20px",
+		fullStar: true,
+		readOnly: true
+	});
+
 	// SLIDER
 	$('.slider-for').slick({
 	  slidesToShow: 1,
@@ -35,20 +46,6 @@ $(function() {
 	  centerMode: true,
 	  focusOnSelect: true,
 	  arrows: false
-	});
-
-	// STARS 
-
-	$(".stars").rateYo({
-		fullStar: true,
-		readOnly: true,
-		starWidth: "15px"
-	});
-
-	$('#big-stars').rateYo({
-		starWidth: "20px",
-		fullStar: true,
-		readOnly: true
 	});
 
 });

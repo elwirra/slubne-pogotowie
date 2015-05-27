@@ -13,10 +13,10 @@
     "html5-boilerplate": "~4.3.0",
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.4",
-    "jquery-rateyo": "~1.2.2",
     "packery": "~1.4.1",
     "selectize": "~0.12.1",
     "ng-breadcrumbs": "~0.4.1",
-    "slick.js": "~1.5.5"
+    "slick.js": "~1.5.5",
+    "angular-bootstrap": "0.12.0"
   }
 }

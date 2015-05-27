@@ -1,0 +1,1 @@
+app.controller("ratingCtrl",function(e,r){this.vendors=vendors;for(var n=0,v=0,o=0,s=0;s<vendors.length;s++){for(var t=0;t<vendors[s].reviews.length;t++)vendors[s].name===r.ven&&(n+=vendors[s].reviews[t].stars);o=vendors[s].reviews.length}v=Math.floor(n/o),e.reviewsNum=o,e.averageRate=v});

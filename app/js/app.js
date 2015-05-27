@@ -1,6 +1,7 @@
 var app = angular.module("WeddingEmergency", [
   'ngRoute', 
-  'ng-breadcrumbs'
+  'ng-breadcrumbs',
+  'ui.bootstrap'
 ]);
 
 

@@ -72,14 +72,19 @@ var vendors = [{
   reviewsNum: 10,
   age: 1,
   averageReview: 5,
+  style: 'Nowoczesny',
+  shortDesc: 'Jesteśmy awesome',
+  longDesc: 'As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!',
   reviews: [{
     author: 'Susan',
     date: '05/2015',
+    stars: 3,
     title: 'Wspaniała usługa!',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }, {
     author: 'Merkel',
     date: '02/2015',
+    stars: 4,
     title: 'Najpiękniejszy dzień',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }]
@@ -92,14 +97,19 @@ var vendors = [{
   reviewsNum: 30,
   age: 2,
   averageReview: 3.5,
+  style: 'Vintage',
+  shortDesc: 'Jesteśmy awesome',
+  longDesc: 'As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!',
   reviews: [{
     author: 'Primavera',
     date: '05/2015',
+    stars: 2,
     title: 'Wspaniała usługa!',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }, {
     author: 'Merkel',
     date: '02/2015',
+    stars: 3,
     title: 'Najpiękniejszy dzień',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }]
@@ -112,14 +122,21 @@ var vendors = [{
   reviewsNum: 1,
   age: 3,
   averageReview: 4.5,
+  style: 'Princess',
+  shortDesc: 'Jesteśmy awesome',
+  longDesc: 'As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!',
   reviews: [{
+    id: 1,
     author: 'Alicja',
     date: '05/2015',
+    stars: 1,
     title: 'Wspaniała usługa!',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }, {
+    id: 2,
     author: 'Merkel',
     date: '02/2015',
+    stars: 3,
     title: 'Najpiękniejszy dzień',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }]
@@ -132,14 +149,19 @@ var vendors = [{
   reviewsNum: 100,
   age: 4,
   averageReview: 3,
+  style: 'Hand-made',
+  shortDesc: 'Jesteśmy awesome',
+  longDesc: 'As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!',
   reviews: [{
     author: 'Gozo',
     date: '05/2015',
+    stars: 4,
     title: 'Wspaniała usługa!',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }, {
     author: 'Merkel',
     date: '02/2015',
+    stars: 4,
     title: 'Najpiękniejszy dzień',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }]
@@ -152,14 +174,19 @@ var vendors = [{
   reviewsNum: 50,
   age: 5,
   averageReview: 4,
+  style: 'Nowoczesny',
+  shortDesc: 'Jesteśmy awesome',
+  longDesc: 'As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!',
   reviews: [{
     author: 'Beata',
     date: '05/2015',
+    stars: 3,
     title: 'Wspaniała usługa!',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }, {
     author: 'Merkel',
     date: '02/2015',
+    stars: 3,
     title: 'Najpiękniejszy dzień',
     body: 'I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!'
   }]

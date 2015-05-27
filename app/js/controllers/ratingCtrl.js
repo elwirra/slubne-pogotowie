@@ -23,5 +23,4 @@ app.controller('ratingCtrl', function ($scope, $routeParams) {
   $scope.reviewsNum = reviewsNum;
   $scope.averageRate = averageRating;
 
-
 });

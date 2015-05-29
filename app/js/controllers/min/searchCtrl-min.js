@@ -1,0 +1,1 @@
+app.controller("searchCtrl",function(u,r){u.query="",u.submitQuery=function(){null!==u.query&&r.path("/results")},u.submitForm=u.submitQuery});

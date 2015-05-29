@@ -17,13 +17,17 @@ app.config(['$routeProvider',
         templateUrl: 'templates/pages/contact.html',
         label: 'Kontakt'
       }).
-      when('/:cat', {
+      when('/category/:cat', {
       	templateUrl: 'templates/pages/category.html',
         label: 'Category'
       }).
-      when('/:cat/:ven', {
+      when('/category/:cat/:ven', {
        	templateUrl: 'templates/pages/vendor.html',
         label: 'Vendor'
+      }).
+      when('/results', {
+        templateUrl: 'templates/pages/search-result.html',
+        label: 'Results'
       }).
       otherwise({
         redirectTo: '/'

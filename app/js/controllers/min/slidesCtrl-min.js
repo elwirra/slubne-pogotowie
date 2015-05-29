@@ -1,0 +1,1 @@
+app.controller("slidesCtrl",function(e,r){this.vendors=vendors;for(var n=0;n<vendors.length;n++)for(var o=0;o<vendors[n].images.length;o++)vendors[n].name===r.ven&&(e.slideUrl=vendors[n].images,console.log(e.slideUrl))});

@@ -81,6 +81,9 @@ aside .sm-btn {
   display: inline-block;
   vertical-align: middle;
 }
+.short-top .search-box form {
+  background: none;
+}
 .breadcrumbs {
   color: #888;
   font-size: 13px;
@@ -285,6 +288,23 @@ span.ico-location {
 span.ico-cost {
   background-position: 0 -20px;
 }
+.search-box form {
+  background: #1a162b;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+}
+.search-box form p {
+  float: left;
+  margin: 0 8px;
+}
+.search-box form input {
+  min-width: 350px;
+}
+.search-box form input,
+.search-box form button {
+  font-size: 22px;
+}
 .center-wrapper {
   position: relative;
   top: 50%;
@@ -317,23 +337,7 @@ span.ico-cost {
   display: block;
   font-weight: normal;
   margin-top: 10px;
-}
-.main-top .search-box form {
-  background: #1a162b;
-  display: inline-block;
-  padding: 20px;
-  border-radius: 8px;
-}
-.main-top .search-box form p {
-  float: left;
-  margin: 0 8px;
-}
-.main-top input {
-  min-width: 350px;
-}
-.main-top input,
-.main-top button {
-  font-size: 22px;
+  color: #fff;
 }
 .main-top-content {
   position: relative;

@@ -1,0 +1,1 @@
+app.controller("mainSearchCtrl",function(r,t,e){r.search=function(r){e.setQuery(r),t.path("/results")}});

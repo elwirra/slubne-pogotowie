@@ -1,0 +1,1 @@
+app.filter("searchQuery",function(){return function(r,n){for(var e=[],t=0;t<r.length;t++)r[t].name==n&&e.push(r[t]);return e}});

@@ -1,78 +1,80 @@
+<div ng-controller="searchCtrl">
 <div class="short-top row">
-		<div class="search-box" ng-controller="searchCtrl">
-			<form action="#" ng-submit="submitQuery()">
-				<p>
-					<input type="text" ng-model="query" placeholder="Czego szukasz? (Np. sukni)" />
-				</p>
-				<!-- <p>
-					<select name="city" id="city">
-						<option value="Warszawa">Warszawa</option>
-						<option value="Wrocław">Wrocław</option>
-					</select>
-				</p> -->
-				<p>
-					<button type="submit" ng-click="submitForm()">Szukaj</button>
-				</p>
-			</form>
-		</div>
+	<div class="search-box">
+		<form action="#">
+			<p>
+				<input type="text" ng-model="query" placeholder="Czego szukasz? (Np. sukni)" />
+			</p>
+			<!-- <p>
+				<select name="city" id="city">
+					<option value="Warszawa">Warszawa</option>
+					<option value="Wrocław">Wrocław</option>
+				</select>
+			</p> -->
+			<p>
+				<button type="button">Szukaj</button>
+			</p>
+		</form>
 	</div>
-		<breadcrumbs></breadcrumbs>
-		<div class="row page-container">
-			<aside class="col-lg-3 col-md-3 col-sm-3">
-				<h3>Filtry:</h3><a ng-click="predicate=''" class="sm-btn btn-solid-gray">Wyczyść</a>
-				<div class="sort-by" id="sort-by">
-					<h4>Sortuj według:</h4>
-					<ul ng-model="orderProp">
-						<li>
-							<a toggle-class="active" ng-click="predicate='name';reverse=!reverse">Nazwy</a>
-						</li>
-						<li>
-							<a toggle-class="active" ng-click="predicate='averageReview'; reverse=!reverse">Oceny</a>							
-						</li>
-						<li>
-							<a toggle-class="active" ng-click="predicate='-reviewsNum'; reverse=!reverse">Ilości ocen</a>
-						</li>
-						<li>
-							<a toggle-class="active" ng-click="predicate='age'; reverse=!reverse">Daty dodania</a>
-						</li>
-						<li>
-							<a toggle-class="active" ng-click="predicate='-minPrice'; reverse=!reverse">Ceny</a>
-						</li>
-					</ul>
-					<h4>Zakres cenowy:</h4>
+</div>
+<div ncy-breadcrumb></div>
+	<div class="row page-container">
+		<aside class="col-lg-3 col-md-3 col-sm-3">
+			<h3>Filtry:</h3><a ng-click="predicate=''" class="sm-btn btn-solid-gray">Wyczyść</a>
+			<div class="sort-by" id="sort-by">
+				<h4>Sortuj według:</h4>
+				<ul ng-model="orderProp">
+					<li>
+						<a toggle-class="active" ng-click="predicate='name';reverse=!reverse">Nazwy</a>
+					</li>
+					<li>
+						<a toggle-class="active" ng-click="predicate='averageReview'; reverse=!reverse">Oceny</a>							
+					</li>
+					<li>
+						<a toggle-class="active" ng-click="predicate='-reviewsNum'; reverse=!reverse">Ilości ocen</a>
+					</li>
+					<li>
+						<a toggle-class="active" ng-click="predicate='age'; reverse=!reverse">Daty dodania</a>
+					</li>
+					<li>
+						<a toggle-class="active" ng-click="predicate='-minPrice'; reverse=!reverse">Ceny</a>
+					</li>
+				</ul>
+				<h4>Zakres cenowy:</h4>
 
-				</div>
-				<div class="recently-seen">
-					<h3>Ostatnio oglądane:</h3>
-					<div class="review sm-review">
-						<img src="img/placeholder-avatar.jpg" alt="" />
-						<div class="right-content">
-							<h4>Cukiernia Miłkowski</h4>
-							<div class="stars"></div>
-							<span class="category">Torty weselne</span>
-							<p>Piękne torty na zamówienie...</p>
-						</div>
+			</div>
+			<div class="recently-seen">
+				<h3>Ostatnio oglądane:</h3>
+				<div class="review sm-review">
+					<img src="img/placeholder-avatar.jpg" alt="" />
+					<div class="right-content">
+						<h4>Cukiernia Miłkowski</h4>
+						<div class="stars"></div>
+						<span class="category">Torty weselne</span>
+						<p>Piękne torty na zamówienie...</p>
 					</div>
 				</div>
-			</aside>
-			
-			<section class="search-results col-lg-9 col-md-9 col-sm-9">
-				<h4>Wyniki wyszukiwania dla {{query}} <span>(900)</span>:</h4>
-				<div class="row" id="tiles-wrapper">
-					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in vendors | orderBy:predicate:reverse | filter:query">
-						<a ng-href="#/category/{{ curCategory }}/{{ vendor.name }}">
-							<div class="inner-tile" ng-controller="ratingCtrl">
-								<img ng-src="{{vendor.img}}" alt="">
-								<h4>{{vendor.name}}</h4>
+			</div>
+		</aside>
+		
+		<section class="search-results col-lg-9 col-md-9 col-sm-9">
+			<h4>Wyniki wyszukiwania dla {{query}} <span>()</span>:</h4>
+			<div class="row" id="tiles-wrapper">
+				<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in vendors | filter:query">
+					<a ui-sref="vendor({ cat: vendor.category, ven: vendor.name })">
+						<div class="inner-tile" ng-controller="ratingCtrl">
+							<img ng-src="{{vendor.img}}" alt="">
+							<h4>{{vendor.name}}</h4>
 
-								<!-- temporary solution till we have no backend-->
+							<!-- temporary solution till we have no backend-->
 
-								<p><rating ng-model="vendor.averageReview" max="5" readonly="true"></rating><span>({{ reviewsNum }}) - static data</span></p>
-								<p><span class="ico-location"></span>{{vendor.location}}</p>
-								<p><span class="ico-cost"></span>{{vendor.minPrice}}-{{vendor.maxPrice}}zł</p>
-							</div>
-						</a>
-					</div>			
-				</div>	
-			</section>
-		</div>
+							<p><rating ng-model="vendor.averageReview" max="5" readonly="true"></rating><span>({{ reviewsNum }}) - static data</span></p>
+							<p><span class="ico-location"></span>{{vendor.location}}</p>
+							<p><span class="ico-cost"></span>{{vendor.minPrice}}-{{vendor.maxPrice}}zł</p>
+						</div>
+					</a>
+				</div>			
+			</div>	
+		</section>
+	</div>
+</div>

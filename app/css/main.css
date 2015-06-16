@@ -226,7 +226,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
-button[type="submit"] {
+button[type="submit"],
+button[type="button"] {
   color: #fff;
   border: transparent solid 1px;
   background: #00baff;
@@ -235,10 +236,12 @@ button[type="submit"] {
   cursor: pointer;
   transition: background 0.1s ease-in;
 }
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+button[type="button"]:hover {
   background: #f55e9b;
 }
-button[type="submit"]:focus {
+button[type="submit"]:focus,
+button[type="button"]:focus {
   border: #888 solid 1px;
   outline: none;
 }

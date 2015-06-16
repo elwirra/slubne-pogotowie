@@ -1,4 +1,4 @@
-app.controller('ratingCtrl', function ($scope, $http, $routeParams) {
+app.controller('ratingCtrl', function ($scope, $http, $stateParams) {
 
   $http.get('js/data/vendors.json').success(function(vendors) {
     $scope.vendors = vendors;
@@ -13,7 +13,7 @@ app.controller('ratingCtrl', function ($scope, $http, $routeParams) {
         // iterating through each vendor reviews (2)
         for(var t = 0; t < vendors[i].reviews.length; t++) {
           // sum of all stars from all 
-          if (vendors[i].name === $routeParams.ven) { 
+          if (vendors[i].name === $stateParams.ven) { 
             ratingSum += vendors[i].reviews[t].stars;
           }
         }

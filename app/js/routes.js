@@ -1,35 +1,68 @@
-app.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/', {
-        templateUrl: 'templates/pages/main.html',
-        label: 'Strona główna'
-      }).
-      when('/regulamin', {
-        templateUrl: 'templates/pages/terms.html',
+app.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');
+
+  $stateProvider
+    .state('main', {
+      url: '/',
+      templateUrl: 'templates/pages/main.html',
+      ncyBreadcrumb: {
+        label: 'Strona Główna'
+      }
+    })
+    .state('terms', {
+      parent: 'main',
+      url: '/regulamin',
+      templateUrl: 'templates/pages/terms.html',
+      ncyBreadcrumb: {
         label: 'Regulamin'
-      }).
-      when('/polityka-prywatnosci', {
-        templateUrl: 'templates/pages/privacypolicy.html',
+      }
+    })
+    .state('privacypolicy', {
+      url: '/polityka-prywatnosci',
+      templateUrl: 'templates/pages/privacypolicy.html',
+      ncyBreadcrumb: {
         label: 'Polityka prywatności'
-      }).
-      when('/kontakt', {
-        templateUrl: 'templates/pages/contact.html',
+      }
+    })
+    .state('contact', {
+      url: '/kontakt',
+      templateUrl: 'templates/pages/contact.html',
+      ncyBreadcrumb: {
         label: 'Kontakt'
-      }).
-      when('/category/:cat', {
-      	templateUrl: 'templates/pages/category.html',
+      }
+    })
+    .state('category', {
+      url: '/category/:cat',
+      templateUrl: 'templates/pages/category.html',
+      ncyBreadcrumb: {
         label: 'Category'
-      }).
-      when('/category/:cat/:ven', {
-       	templateUrl: 'templates/pages/vendor.html',
+      },
+      controller: function($scope, $stateParams) {
+            $scope.curCat = $stateParams.cat; 
+        }
+    })
+    .state('vendor', {
+      url: '/category/:cat/:ven',
+      templateUrl: 'templates/pages/vendor.html',
+      ncyBreadcrumb: {
         label: 'Vendor'
-      }).
-      when('/results', {
-        templateUrl: 'templates/pages/search-result.html',
-        label: 'Results'
-      }).
-      otherwise({
-        redirectTo: '/'
-      });
-  }]);
+      },
+      controller: function($scope, $stateParams) {
+            $scope.curVen = $stateParams.ven; 
+        }
+    })
+    .state('searchresults', {
+      url: '/results',
+      templateUrl: 'templates/pages/search-result.html',
+      ncyBreadcrumb: {
+        label: 'Wyniki wyszukiwania'
+      }
+    })
+    .state('addcompany', {
+      url: '/add-company',
+      templateUrl: 'templates/pages/add-company.html',
+      ncyBreadcrumb: {
+        label: 'Dodaj firmę'
+      }
+    });
+});

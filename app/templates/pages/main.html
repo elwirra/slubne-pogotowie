@@ -2,8 +2,8 @@
 	<div class="main-top-content container">
 		<h2>Przeczytaj recenzje tysięcy par, wybierz najlepsze usługi
 		<small>by uczynić <strong>ten dzień</strong> wyjątkowym</small></h2>
-		<div class="search-box" ng-controller="searchCtrl">
-			<form action="#" ng-submit="submitQuery()">
+		<div class="search-box" ng-controller="mainSearchCtrl">
+			<form action="#" ng-submit="search(query)">
 				<p>
 					<input type="text" ng-model="query" placeholder="Czego szukasz? (Np. sukni)" />
 				</p>
@@ -14,7 +14,7 @@
 					</select>
 				</p> -->
 				<p>
-					<button type="submit" ng-click="submitForm()">Szukaj</button>
+					<button type="submit">Szukaj</button>
 				</p>
 			</form>
 		</div>
@@ -40,9 +40,9 @@
 	<h3>Kategorie usług</h3>
 	<div class="clearfix">
 		<div class="category-tile col-lg-3 col-md-3 col-sm-12" ng-repeat="category in categories">
-			<a ng-href="#/category/{{category.name}}">
+			<a ui-sref="category({cat: category.name})">
 				<h3>{{ category.name }}</h3>
-				<img ng-src="{{category.img}}" alt="">
+				<img ng-src="{{ category.img }}" alt="">
 			</a>
 		</div>
 	</div>	
@@ -50,13 +50,8 @@
 
 <section class="add-section">
 	<div class="row clearfix">
-		<div class="col-lg-6 col-md-6 col-sm-12">
-			<a href="#" class="btn btn-gray pull-right">
-				+ dodaj kategorię
-			</a>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12">
-			<a href="#" class="btn btn-blue pull-left">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+			<a ui-sref="addcompany" class="btn btn-blue">
 				+ dodaj swoją firmę
 			</a>
 		</div>

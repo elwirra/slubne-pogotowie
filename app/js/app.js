@@ -1,7 +1,7 @@
 var app = angular.module("WeddingEmergency", [
-  'ngRoute', 
-  'ng-breadcrumbs',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ui.router',
+  'ncy-angular-breadcrumb'
 ]);
 
 

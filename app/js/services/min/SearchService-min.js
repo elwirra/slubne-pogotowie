@@ -1,0 +1,1 @@
+app.service("sharedSearchQuery",function(){var e="";return{getQuery:function(){return e},setQuery:function(r){e=r}}});

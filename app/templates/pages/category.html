@@ -57,7 +57,7 @@
 			</aside>
 			
 			<section class="search-results col-lg-9 col-md-9 col-sm-9">
-				<h4>Wyniki wyszukiwania <span>(900)</span>:</h4>
+				<h4>Wyniki wyszukiwania <span>({{vendors.length}})</span>:</h4>
 				<div class="row" id="tiles-wrapper">
 					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in vendors">
 						<a ui-sref="vendor({ cat: curCat, ven: vendor.name})">

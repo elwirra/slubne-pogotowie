@@ -1,1 +1,1 @@
-app.controller("searchCtrl",function(e,r,t){e.query=t.getQuery(),event.preventDefault()});
+app.controller("searchCtrl",function(e,r,t){e.query=t.getQuery(),e.search=function(e){t.setQuery(e),event.preventDefault(),r.path("/results").search({query:e})}});

@@ -1,6 +1,6 @@
 <div class="short-top row">
-		<div class="search-box" ng-controller="searchCtrl">
-			<form action="#" ng-submit="submitQuery()">
+		<div class="search-box" ng-controller="mainSearchCtrl">
+			<form action="#" ng-submit="search(query)">
 				<p>
 					<input type="text" ng-model="query" placeholder="Czego szukasz? (Np. sukni)" />
 				</p>
@@ -11,7 +11,7 @@
 					</select>
 				</p> -->
 				<p>
-					<button type="submit" ng-click="submitForm()">Szukaj</button>
+					<button type="submit">Szukaj</button>
 				</p>
 			</form>
 		</div>

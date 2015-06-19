@@ -1,174 +1,349 @@
-[  
-   {  
-      "category":"Suknie",
-      "name":"Suknie Belladonna",
-      "location":"Al. Wilanowska 91, Warszawa",
-      "minPrice":800,
-      "maxPrice":1500,
-      "img":"img/tiles/tile-1.jpg",
-      "reviewsNum":10,
-      "age":1,
-      "averageReview":5,
-      "style":"Nowoczesny",
-      "shortDesc":"Jesteśmy awesome",
-      "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
-      "reviews":[  
-         {  
-            "author":"Susan",
-            "date":"05/2015",
-            "stars":3,
-            "title":"Wspaniała usługa!",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         },
-         {  
-            "author":"Merkel",
-            "date":"02/2015",
-            "stars":4,
-            "title":"Najpiękniejszy dzień",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         }
-      ],
-      "images":[  
-         "img/slides/1.jpg",
-         "img/slides/2.jpg"
-      ]
-   },
-   {  
-      "category":"Fryzjer",
-      "name":"Suknie Primavera",
-      "location":"Al. Wilanowska 21, Warszawa",
-      "minPrice":1000,
-      "maxPrice":5500,
-      "img":"img/tiles/tile-2.jpg",
-      "reviewsNum":30,
-      "age":2,
-      "averageReview":3.5,
-      "style":"Vintage",
-      "shortDesc":"Jesteśmy awesome",
-      "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
-      "reviews":[  
-         {  
-            "author":"Primavera",
-            "date":"05/2015",
-            "stars":2,
-            "title":"Wspaniała usługa!",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         },
-         {  
-            "author":"Merkel",
-            "date":"02/2015",
-            "stars":3,
-            "title":"Najpiękniejszy dzień",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         }
-      ],
-      "images":[  
-         "img/slides/1.jpg",
-         "img/slides/2.jpg"
-      ]
-   },
-   {  
-      "category":"Samochody",
-      "name":"Suknie Alicja",
-      "location":"Al. Bilanowska 1, Warszawa",
-      "minPrice":900,
-      "maxPrice":2200,
-      "img":"img/tiles/tile-3.jpg",
-      "reviewsNum":1,
-      "age":3,
-      "averageReview":4.5,
-      "style":"Princess",
-      "shortDesc":"Jesteśmy awesome",
-      "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
-      "reviews":[  
-         {  
-            "id":1,
-            "author":"Alicja",
-            "date":"05/2015",
-            "stars":1,
-            "title":"Wspaniała usługa!",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         },
-         {  
-            "id":2,
-            "author":"Merkel",
-            "date":"02/2015",
-            "stars":3,
-            "title":"Najpiękniejszy dzień",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         }
-      ],
-      "images":[  
-         "img/slides/1.jpg",
-         "img/slides/2.jpg"
-      ]
-   },
-   {  
-      "category":"Florist",
-      "name":"Suknie Gozo",
-      "location":"Al. Malta 4, Warszawa",
-      "minPrice":8000,
-      "maxPrice":15000,
-      "img":"img/tiles/tile-4.jpg",
-      "reviewsNum":100,
-      "age":4,
-      "averageReview":3,
-      "style":"Hand-made",
-      "shortDesc":"Jesteśmy awesome",
-      "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
-      "reviews":[  
-         {  
-            "author":"Gozo",
-            "date":"05/2015",
-            "stars":4,
-            "title":"Wspaniała usługa!",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         },
-         {  
-            "author":"Merkel",
-            "date":"02/2015",
-            "stars":4,
-            "title":"Najpiękniejszy dzień",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         }
-      ],
-      "images":[  
-         "img/slides/1.jpg",
-         "img/slides/2.jpg"
-      ]
-   },
-   {  
-      "category":"Suknie",
-      "name":"Beata",
-      "location":"Al. Wilanowska 11, Warszawa",
-      "minPrice":1800,
-      "maxPrice":9500,
-      "img":"img/tiles/tile-5.jpg",
-      "reviewsNum":50,
-      "age":5,
-      "averageReview":4,
-      "style":"Nowoczesny",
-      "shortDesc":"Jesteśmy awesome",
-      "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
-      "reviews":[  
-         {  
-            "author":"Beata",
-            "date":"05/2015",
-            "stars":3,
-            "title":"Wspaniała usługa!",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         },
-         {  
-            "author":"Merkel",
-            "date":"02/2015",
-            "stars":3,
-            "title":"Najpiękniejszy dzień",
-            "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
-         }
-      ],
-      "images":[  
-         "img/slides/1.jpg",
-         "img/slides/2.jpg"
-      ]
-   }
-]
+ [  
+      {
+         "name": "Suknie",
+         "img":"img/categories/suknie.jpg",
+         "vendors": [{
+            "name":"Suknie Belladonna",
+            "location":"Al. Wilanowska 91, Warszawa",
+            "minPrice":800,
+            "maxPrice":1500,
+            "img":"img/tiles/tile-1.jpg",
+            "reviewsNum":10,
+            "age":1,
+            "averageReview":5,
+            "style":"Nowoczesny",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":1,
+                  "author":"Susan",
+                  "date":"05/2015",
+                  "stars":3,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":2,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":4,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      }, 
+      { 
+         "name": "Fryzjer",
+         "img":"img/categories/fryzjer.jpg",
+         "vendors": [{
+            "name":"Fryzjer Primavera",
+            "location":"Al. Wilanowska 21, Warszawa",
+            "minPrice":1000,
+            "maxPrice":5500,
+            "img":"img/tiles/tile-2.jpg",
+            "reviewsNum":30,
+            "age":2,
+            "averageReview":3.5,
+            "style":"Vintage",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":3,
+                  "author":"Primavera",
+                  "date":"05/2015",
+                  "stars":2,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":4,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      },
+      {  
+         "name": "Samochody",
+         "img":"img/categories/samochod.jpg",
+         "vendors": [{
+            "name":"Samochody Alicja",
+            "location":"Al. Bilanowska 1, Warszawa",
+            "minPrice":900,
+            "maxPrice":2200,
+            "img":"img/tiles/tile-3.jpg",
+            "reviewsNum":1,
+            "age":3,
+            "averageReview":4.5,
+            "style":"Princess",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":5,
+                  "author":"Alicja",
+                  "date":"05/2015",
+                  "stars":1,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":6,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      },
+      {  
+         "name": "Florist",
+         "img":"img/categories/florist.jpg",
+         "vendors": [{ 
+            "name":"Florist Gozo",
+            "location":"Al. Malta 4, Warszawa",
+            "minPrice":8000,
+            "maxPrice":15000,
+            "img":"img/tiles/tile-4.jpg",
+            "reviewsNum":100,
+            "age":4,
+            "averageReview":3,
+            "style":"Hand-made",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":7,
+                  "author":"Gozo",
+                  "date":"05/2015",
+                  "stars":4,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":8,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":4,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      },
+      {  
+         "name": "Catering",
+         "img":"img/categories/catering.jpg",
+         "vendors": [{
+            "name":"Catering Beata",
+            "location":"Al. Wilanowska 11, Warszawa",
+            "minPrice":1800,
+            "maxPrice":9500,
+            "img":"img/tiles/tile-5.jpg",
+            "reviewsNum":50,
+            "age":5,
+            "averageReview":4,
+            "style":"Nowoczesny",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":9,
+                  "author":"Beata",
+                  "date":"05/2015",
+                  "stars":3,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":10,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      }, {  
+         "name": "Kapele",
+         "img":"img/categories/kapele.jpg",
+         "vendors": [{
+            "name":"PIERSI",
+            "location":"Al. Wilanowska 11, Warszawa",
+            "minPrice":1800,
+            "maxPrice":9500,
+            "img":"img/tiles/tile-5.jpg",
+            "reviewsNum":50,
+            "age":5,
+            "averageReview":4,
+            "style":"Nowoczesny",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":11,
+                  "author":"Beata",
+                  "date":"05/2015",
+                  "stars":3,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":12,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      }, {  
+         "name": "Makeup",
+         "img":"img/categories/makeup.jpg",
+         "vendors": [{
+            "name":"Makeup Feniks",
+            "location":"Al. Wilanowska 11, Warszawa",
+            "minPrice":1800,
+            "maxPrice":9500,
+            "img":"img/tiles/tile-5.jpg",
+            "reviewsNum":50,
+            "age":5,
+            "averageReview":4,
+            "style":"Nowoczesny",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":13,
+                  "author":"Beata",
+                  "date":"05/2015",
+                  "stars":3,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               { 
+                  "id":14, 
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      }, {  
+         "name": "Fotograf",
+         "img":"img/categories/photo.jpg",
+         "vendors": [{
+            "name":"Fotograf Agata",
+            "location":"Al. Wilanowska 11, Warszawa",
+            "minPrice":1800,
+            "maxPrice":9500,
+            "img":"img/tiles/tile-5.jpg",
+            "reviewsNum":50,
+            "age":5,
+            "averageReview":4,
+            "style":"Nowoczesny",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":15,
+                  "author":"Beata",
+                  "date":"05/2015",
+                  "stars":3,
+                  "title":"Wspaniała usługa!",
+                  "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":16,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"Two before newestI cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      }, {  
+         "name": "Zakwaterowanie",
+         "img":"img/categories/zakwaterowanie.jpg",
+         "vendors": [{
+            "name":"Zakwaterowanie Luxx",
+            "location":"Al. Wilanowska 11, Warszawa",
+            "minPrice":1800,
+            "maxPrice":9500,
+            "img":"img/tiles/tile-5.jpg",
+            "reviewsNum":50,
+            "age":5,
+            "averageReview":4,
+            "style":"Nowoczesny",
+            "shortDesc":"Jesteśmy awesome",
+            "longDesc":"As I already mentioned, Amy and Pam were able to make the entire wedding planning process exciting, enjoyable, and easy, despite the fact that the bride lived 2 time zones away!",
+            "reviews":[  
+               {  
+                  "id":17,
+                  "author":"Beata",
+                  "date":"05/2015",
+                  "stars":3,
+                  "title":"Wspaniała usługa!",
+                  "body":"One before newest I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               },
+               {  
+                  "id":18,
+                  "author":"Merkel",
+                  "date":"02/2015",
+                  "stars":3,
+                  "title":"Najpiękniejszy dzień",
+                  "body":"Newest I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+               }
+            ],
+            "images":[  
+               "img/slides/1.jpg",
+               "img/slides/2.jpg"
+            ]
+         }]
+      }
+   ]

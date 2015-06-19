@@ -1,1 +1,1 @@
-app.controller("mainCtrl",function(s,e,n){e.get("js/data/reviews.json").success(function(e){s.reviews=e}),e.get("js/data/categories.json").success(function(e){s.categories=e}),e.get("js/data/vendors.json").success(function(e){s.vendors=e})});
+app.controller("mainCtrl",function(s,e,c){var n=new Firebase("https://scorching-torch-1515.firebaseio.com");e.get("js/data/reviews.json").success(function(e){s.reviews=e}),e.get("js/data/vendors.json").success(function(e){s.categories=e})});

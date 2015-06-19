@@ -57,9 +57,10 @@
 			</aside>
 			
 			<section class="search-results col-lg-9 col-md-9 col-sm-9">
-				<h4>Wyniki wyszukiwania <span>({{vendors.length}})</span>:</h4>
+				<h4>Firmy w kategorii {{ curCat }} <span>({{vendors.length}})</span>:</h4>
 				<div class="row" id="tiles-wrapper">
-					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in vendors">
+				<div ng-repeat="category in categories">
+					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in category.vendors" ng-if="category.name == curCat">
 						<a ui-sref="vendor({ cat: curCat, ven: vendor.name})">
 							<div class="inner-tile" ng-controller="ratingCtrl">
 								<img ng-src="{{vendor.img}}" alt="">
@@ -72,7 +73,9 @@
 								<p><span class="ico-cost"></span>{{vendor.minPrice}}-{{vendor.maxPrice}}zł</p>
 							</div>
 						</a>
-					</div>			
+					</div>
+				</div>
+					<div class="empty-data" ng-show="!vendors.length">Nie ma jeszcze firm w tej kategorii</div>		
 				</div>	
 			</section>
 		</div>

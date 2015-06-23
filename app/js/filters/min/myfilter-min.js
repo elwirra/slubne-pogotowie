@@ -1,0 +1,1 @@
+app.filter("myFilter",function(){function i(i,t){categories.$loaded()&&$filter("limitTo")}});

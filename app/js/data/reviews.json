@@ -1,1 +1,56 @@
-[{"name":"Cukiernia Miłkowski","category":"Torty weselne","description":"Przepyszny, piękny tort, polecam!"},{"name":"Suknie Belladonna","category":"Suknie ślubne","description":"Ręcznie szyte suknie z Francji!"},{"name":"Cukiernia Baśniowa","category":"Torty weselne","description":"Wyszukany, piękny tort, polecam!"}]
+[  
+   {  
+      "id":1,
+      "vendorId": 1,
+      "author":"Susan",
+      "date":"05/2015",
+      "stars":3,
+      "title":"Wspaniała usługa!",
+      "body":"First I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+   },
+   {  
+      "id":2,
+      "vendorId": 1,
+      "author":"Merkel",
+      "date":"02/2015",
+      "stars":4,
+      "title":"Najpiękniejszy dzień",
+      "body":"I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+   },
+    {  
+      "id":3,
+      "vendorId": 3,
+      "author":"Susan",
+      "date":"05/2015",
+      "stars":3,
+      "title":"Wspaniała usługa!",
+      "body":"First I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+   },
+   {  
+      "id":4,
+      "vendorId": 4,
+      "author":"Merkel",
+      "date":"02/2015",
+      "stars":4,
+      "title":"Najpiękniejszy dzień",
+      "body":"3 I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+   },
+    {  
+      "id":5,
+      "vendorId": 6,
+      "author":"Susan",
+      "date":"05/2015",
+      "stars":3,
+      "title":"Wspaniała usługa!",
+      "body":"2 First I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+   },
+   {  
+      "id":6,
+      "vendorId": 2,
+      "author":"Merkel",
+      "date":"02/2015",
+      "stars":4,
+      "title":"Najpiękniejszy dzień",
+      "body":"1 I cannot say enough good things about our experience working with Pam and Amy. Their creativity, organization, and attention to detail enabled my fiance, family, and I to relax and enjoy the wedding planning process! They are committed to ensuring that their clients receive high quality, personalized events. We were continuously impressed by their excellent communication skills, their professionalism, their flexibility, and their enthusiasm! They take time to engage their clients, understand their desires, and to help orchestrate them!"
+   }
+]

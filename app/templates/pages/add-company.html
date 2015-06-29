@@ -1,21 +1,19 @@
 <div class="row page-container">
-	<section class="col-lg-8 col-md-8 col-sm-8">
-
-			
+	<section class="col-lg-8 col-md-8 col-sm-8" ng-controller="addCompanyCtrl">	
 				<div><h4>Dodajesz swoją firmę do katalogu ślubne-pogotowie.pl</h4></div>
 				<form action="#">
 					<p>Podaj nazwę firmy</p>
-					<p><input type="text" placeholder="Nazwa firmy"></p>
+					<p><input type="text" placeholder="Nazwa firmy" ng-model="vendor.name"></p>
 					<p>Podaj adres e-mail, na który będą przychodzić wiadomości od potencjalnych klientów</p>
-					<p><input type="text" placeholder="E-mail"></p>
+					<p><input type="text" placeholder="E-mail" ng-model="vendor.email"></p>
 					<p>Dodaj zdjęcia, które zachęcą potencjalnych klientów</p>
-					<p><input type="file" /></p>
+					<!-- <p><input type="file" /></p>
 					<p>W jakich cenach świadczysz swoje usługi?</p>
 					<p><input type="text" placeholder="Zakres cenowy"></p>
-					<p>W jakich cenach świadczysz swoje usługi?</p>
-					<p><input type="text" placeholder="Adres firmy"></p>
+					<p>W jakich cenach świadczysz swoje usługi?</p> -->
+					<p><input type="text" placeholder="Adres firmy" ng-model="vendor.location"></p>
 					<p>Napisz parę słów o swojej firmie</p>
-					<textarea></textarea>
+					<textarea ng-model="vendor.longDesc"></textarea>
 					<p><button type="submit">Dodaj firmę</button></p>
 				</form>
 		

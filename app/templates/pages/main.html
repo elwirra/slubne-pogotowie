@@ -27,9 +27,9 @@
 		<div ng-repeat="review in reviews | orderBy:'-id' | limitTo: 3" class="review col-lg-4 col-md-4 col-sm-12">
 			<img src="img/placeholder-avatar.jpg" alt="" />
 			<div class="right-content">
-				<h4>{{ review.vendorId }} (nazwa firmy)</h4>
+				<h4><a href="#">{{ review.vendorId }} (nazwa firmy)</a></h4>
 				<div class="stars"></div>
-				<span class="category"> {{ review.categoryId }} (nazwa kategorii)</span>
+				<span class="category"> {{ reviewCategory }} (nazwa kategorii)</span>
 				<p> {{ review.body | limitTo:100 }}{{ review.body.length < 100 ? '' : '...'}} </p>
 			</div>
 		</div>

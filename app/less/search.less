@@ -14,13 +14,10 @@ aside h4 {
 }
 
 aside .sort-by {
-	background: #ebeaea;
 	border-radius: 6px;
-	padding: 10px 20px;
 	margin-bottom: 20px;
 	ul {
-		padding-left: 15px;
-		margin: 0;
+		padding-left: 0;
 	}
 }
 
@@ -40,10 +37,12 @@ aside .sm-btn {
 .sm-review {
 	img {
 		width: 20%;
-		margin-right: 2%;
+		margin-right: 5%;
+		border-radius: 50px;
 	}
 	.right-content {
-		width: 78%;
+		width: 75%;
+		margin-top: 10px;
 	}
 	img, .right-content {
 		float: left;
@@ -61,17 +60,25 @@ aside .sm-btn {
 
 
 
-.inner-tile {
-	background: #ebeaea;
+.tile a {
+	color: #333;
+	background: #FAF8FA;
+	transition: background 0.1s ease-in;
+	&:hover {
+		text-decoration: none;
+		background: #EFEBE2;
+	}
+	display: block;
 	border-radius: 6px;
-	padding: 10px;
+	padding: 15px 10px;
 	margin-bottom: 20px;
 	img {
 		width: 100%;
+		border: #fff solid 3px;
 	}
 	h4 {
 		font-size: 16px;
-		margin: 10px 0 0;
+		margin: 14px 0 8px;
 	}
 	p {
 		margin: 0;

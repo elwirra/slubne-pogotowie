@@ -20,7 +20,7 @@
 		<div class="row page-container">
 			<aside class="col-lg-3 col-md-3 col-sm-3">
 				<h3>Filtry:</h3><a ng-click="predicate=''" class="sm-btn btn-solid-gray">Wyczyść</a>
-				<div class="sort-by" id="sort-by">
+				<div class="sort-by aside-box" id="sort-by">
 					<h4>Sortuj według:</h4>
 					<ul ng-model="orderProp">
 						<li>
@@ -42,7 +42,7 @@
 					<h4>Zakres cenowy:</h4>
 
 				</div>
-				<div class="recently-seen">
+				<div class="recently-seen aside-box clearfix">
 					<h3>Ostatnio oglądane:</h3>
 					<div class="review sm-review">
 						<img src="img/placeholder-avatar.jpg" alt="" />
@@ -57,25 +57,21 @@
 			</aside>
 			
 			<section class="search-results col-lg-9 col-md-9 col-sm-9">
-				<h4>Firmy w kategorii {{ curCat }}:</h4>
 				<div class="row" id="tiles-wrapper">
-				<div ng-repeat="category in categories">
-					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="vendor in category.vendors" ng-if="category.name == curCat">
-						<a ui-sref="vendor({ cat: curCat, ven: vendor.name})">
+					<div class="tile col-lg-4 col-md-6 col-sm-6 col-xs-12" ng-repeat="category in categories">
+						<a ui-sref="vendor({ cat: vendor.category, ven: vendor.name })" ng-repeat="vendor in filtered = (category.vendors | filter: query)">
 							<div class="inner-tile" ng-controller="ratingCtrl">
 								<img ng-src="{{vendor.img}}" alt="">
 								<h4>{{vendor.name}}</h4>
 
 								<!-- temporary solution till we have no backend-->
+
 								<p><rating ng-model="vendor.averageReview" max="5" readonly="true"></rating><span>({{ reviewsNum }}) - static data</span></p>
-								
 								<p><span class="ico-location"></span>{{vendor.location}}</p>
 								<p><span class="ico-cost"></span>{{vendor.minPrice}}-{{vendor.maxPrice}}zł</p>
 							</div>
 						</a>
 					</div>
-				</div>
-					<div class="empty-data" ng-show="!categories.length">Nie ma jeszcze firm w tej kategorii</div>		
 				</div>	
 			</section>
 		</div>

@@ -19,6 +19,7 @@
     "slick.js": "~1.5.5",
     "angular-bootstrap": "0.12.0",
     "angular-ui-router": "~0.2.15",
-    "angular-breadcrumb": "~0.4.0"
+    "angular-breadcrumb": "~0.4.0",
+    "nouislider": "~8.0.1"
   }
 }

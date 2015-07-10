@@ -117,7 +117,7 @@ aside .sm-btn {
   padding: 5px 10px;
   width: 60px;
 }
-.noUi-background {
+.noUi-base {
   border: 1px solid #D3D3D3;
 }
 .noUi-target {
@@ -672,4 +672,21 @@ aside .sm-btn {
 .add-company label {
   min-width: 40%;
   font-weight: normal;
+}
+.add-company .range-input {
+  min-width: 10%;
+  width: 20%;
+  margin-top: 20px;
+}
+.add-company .range-right {
+  float: right;
+}
+.add-company .noUi-horizontal {
+  width: 100%;
+}
+.add-company textarea {
+  border: #333 solid 1px;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 50px;
 }

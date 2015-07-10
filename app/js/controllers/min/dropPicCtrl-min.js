@@ -1,0 +1,1 @@
+app.controller("dropPicCtrl",function(n){n.interface={},n.$on("$dropletReady",function e(){n.interface.allowedExtensions(["png","jpg"])})});

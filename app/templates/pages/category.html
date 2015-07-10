@@ -40,13 +40,11 @@
 						</li>
 					</ul>
 					<h4>Zakres cenowy:</h4>
-					<div class="price-range">
-						<div id="price"></div>
-	                    <div class="range-bottom">
-	                        <input type="text" min="0" max="0" step="1" id="price-u-value">
-	                        <input type="text" min="0" max="10000" step="1" id="price-l-value">
-	                    </div>
-                    </div>
+					<div ng-init="test.from = 800; test.to = 4000">
+						<div slider ng-from="test.from" ng-to="test.to" start=0 end=10000 step=100></div>
+						<input class="range-input" type="number" ng-model="test.from" />
+						<input class="range-input range-right" type="number" ng-model="test.to" />
+	                </div>
 
 				</div>
 				<div class="recently-seen aside-box clearfix">

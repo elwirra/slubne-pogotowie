@@ -1,3 +1,1 @@
-Slubne pogotowie - katalog firm oparty o angular-seed :)
-
-by: Alicja Rakowska, css-candies.com
+Wedding vendor directory app based on angular-seed
